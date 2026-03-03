@@ -1,0 +1,21 @@
+name: EpiSeq-5hmC
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python>=3.10
+  # Core scientific
+  - numpy>=1.24
+  - pandas>=2.0
+  - scikit-learn>=1.3
+  # Visualization
+  - matplotlib>=3.7
+  # File I/O
+  - openpyxl>=3.1
+  # Config
+  - pyyaml>=6.0
+  # Bioinformatics
+  - pybigwig>=0.3.22
+  - pysam>=0.21
+  - samtools>=1.17

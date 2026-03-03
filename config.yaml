@@ -1,0 +1,62 @@
+# =============================================================================
+# EpiSeq-5hmC: Training Configuration
+# =============================================================================
+# This config reproduces the main results reported in the manuscript.
+# Adjust paths to match your local environment.
+
+# --- Paths (modify these to your environment) ---
+paths:
+  fasta: "data/mm10.fa"                          # mm10 reference genome
+  bigwig_dir: "data/ENCODE/"                     # Directory containing ENCODE BigWig files
+  manifest: "data/MM285.mm10.manifest.gencode.vM25.tsv.gz"
+  sample_tsv: "data/output_unique_matched.tsv"   # ENCODE sample metadata
+  target_csv: "data/ternary_targets.csv" # Ternary methylome labels
+  split_file: "splits/chrom_splits.txt"          # Chromosome split definitions
+  output_dir: "results/"
+
+# --- Model Architecture ---
+model:
+  seq_len: 1000          # 1 kb window (±500 bp)
+  epi_window: 10000      # ±10 kb chromatin window
+  epi_bin_size: 500      # 500 bp bins → 40 bins total
+  features:
+    - CTCF
+    - DNase-seq
+    - H3K4me1
+    - H3K4me3
+    - POLR2A
+
+# --- Labeling Thresholds ---
+# High-confidence CpG site definitions from ternary atlas
+labeling:
+  th_5hmc: 0.20          # Positive: f(5hmC) >= 0.20
+  th_5mc: 0.50           # Negative: f(5mC) >= 0.50
+  th_5hmc_neg: 0.05      # Negative: f(5hmC) < 0.05
+  # Sites with 0.05 <= f(5hmC) < 0.20 are excluded (intermediate)
+
+# --- Training Hyperparameters ---
+training:
+  batch_size: 1024
+  learning_rate: 0.001
+  max_epochs: 20
+  patience: 3            # Early stopping patience
+  # Note: optimizer and loss are not configurable at runtime.
+  # They are hardcoded as Adam and BCELoss(reduction='none') in train scripts.
+  # optimizer: Adam
+  # loss: BCELoss  # reduction='none', with external masking for ambiguous labels (label=-1)
+  dropout: 0.5
+  seed: 42
+
+# --- Cross-Validation ---
+cross_validation:
+  # Note: strategy, n_splits, and val_ratio are not used at runtime.
+  # Splits were pre-generated via generate_splits.py with these parameters.
+  # strategy: "chromosome-based"
+  # n_splits: 100
+  # val_ratio: "15-20%"
+  selection: "best validation loss"
+
+# --- Hardware ---
+hardware:
+  gpu_id: 0
+  num_workers: 8

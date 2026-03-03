@@ -1,0 +1,36 @@
+ZD_ID	BigWig_Filename	Tissue_Name	Experiment_Category	Experiment_Type	Final_Type	ENCODE_Days	ZD_Weeks	Age_Diff
+ZD234	ENCFF293XWM.bigWig	cerebellum	DNase-seq		DNase-seq	2 months	8	5.0
+ZD234	ENCFF296IKH.bigWig	cerebellum	Histone ChIP-seq	H3K4me1	H3K4me1	2 months	8	5.0
+ZD234	ENCFF009XAS.bigWig	cerebellum	Histone ChIP-seq	H3K4me3	H3K4me3	2 months	8	5.0
+ZD234	ENCFF876RKZ.bigWig	cerebellum	TF ChIP-seq	CTCF	CTCF	2 months	8	5.0
+ZD234	ENCFF279CBP.bigWig	cerebellum	TF ChIP-seq	POLR2A	POLR2A	2 months	8	5.0
+ZD19	ENCFF501KJH.bigWig	heart	DNase-seq		DNase-seq	2 months	8	5.0
+ZD19	ENCFF590RTF.bigWig	heart	Histone ChIP-seq	H3K4me1	H3K4me1	2 months	8	5.0
+ZD19	ENCFF031YFX.bigWig	heart	Histone ChIP-seq	H3K4me3	H3K4me3	2 months	8	5.0
+ZD19	ENCFF147IYR.bigWig	heart	TF ChIP-seq	CTCF	CTCF	2 months	8	5.0
+ZD19	ENCFF888EZW.bigWig	heart	TF ChIP-seq	POLR2A	POLR2A	2 months	8	5.0
+ZD20	ENCFF161VPP.bigWig	kidney	DNase-seq		DNase-seq	2 months	8	5.0
+ZD20	ENCFF769TPY.bigWig	kidney	Histone ChIP-seq	H3K4me1	H3K4me1	2 months	8	5.0
+ZD20	ENCFF566SLT.bigWig	kidney	Histone ChIP-seq	H3K4me3	H3K4me3	2 months	8	5.0
+ZD20	ENCFF826DBQ.bigWig	kidney	TF ChIP-seq	CTCF	CTCF	2 months	8	5.0
+ZD20	ENCFF835XXX.bigWig	kidney	TF ChIP-seq	POLR2A	POLR2A	2 months	8	5.0
+ZD21	ENCFF100XUL.bigWig	liver	DNase-seq		DNase-seq	2 months	8	5.0
+ZD21	ENCFF989WVI.bigWig	liver	Histone ChIP-seq	H3K4me1	H3K4me1	2 months	8	5.0
+ZD21	ENCFF310LUR.bigWig	liver	Histone ChIP-seq	H3K4me3	H3K4me3	2 months	8	5.0
+ZD21	ENCFF155SPJ.bigWig	liver	TF ChIP-seq	CTCF	CTCF	2 months	8	5.0
+ZD21	ENCFF779ZHR.bigWig	liver	TF ChIP-seq	POLR2A	POLR2A	2 months	8	5.0
+ZD22	ENCFF046WVP.bigWig	lung	DNase-seq		DNase-seq	2 months	8	5.0
+ZD22	ENCFF629UOT.bigWig	lung	Histone ChIP-seq	H3K4me1	H3K4me1	2 months	8	5.0
+ZD22	ENCFF863AFJ.bigWig	lung	Histone ChIP-seq	H3K4me3	H3K4me3	2 months	8	5.0
+ZD22	ENCFF304KVI.bigWig	lung	TF ChIP-seq	CTCF	CTCF	2 months	8	5.0
+ZD22	ENCFF035UNV.bigWig	lung	TF ChIP-seq	POLR2A	POLR2A	2 months	8	5.0
+ZD23	ENCFF130MCM.bigWig	spleen	DNase-seq		DNase-seq	2 months	8	5.0
+ZD23	ENCFF076HOK.bigWig	spleen	Histone ChIP-seq	H3K4me1	H3K4me1	2 months	8	5.0
+ZD23	ENCFF360QGB.bigWig	spleen	Histone ChIP-seq	H3K4me3	H3K4me3	2 months	8	5.0
+ZD23	ENCFF535WVL.bigWig	spleen	TF ChIP-seq	CTCF	CTCF	2 months	8	5.0
+ZD23	ENCFF119UPE.bigWig	spleen	TF ChIP-seq	POLR2A	POLR2A	2 months	8	5.0
+ZD35	ENCFF516GQR.bigWig	thymus	DNase-seq		DNase-seq	2 months	8	5.0
+ZD35	ENCFF275PZN.bigWig	thymus	Histone ChIP-seq	H3K4me1	H3K4me1	2 months	8	5.0
+ZD35	ENCFF676KTM.bigWig	thymus	Histone ChIP-seq	H3K4me3	H3K4me3	2 months	8	5.0
+ZD35	ENCFF669UPX.bigWig	thymus	TF ChIP-seq	CTCF	CTCF	2 months	8	5.0
+ZD35	ENCFF802KMQ.bigWig	thymus	TF ChIP-seq	POLR2A	POLR2A	2 months	8	5.0
